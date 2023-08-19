@@ -1,62 +1,107 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
-    display: flex;
-    flex-direction: column;
-    font-family: Roboto, sans-seric;
-    margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto, sans-seric;
+  margin: 0;
+}
+
+.section-1,
+.section-2,
+.section-3,
+.section-4,
+.section-5 {
+  padding-left: 270px;
+  padding-right: 250px;
 }
 
 .section-1 {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 80px;
 
-    background-color: #1F2937;
-    padding-left: 200px;
-    padding-right: 200px;
-    padding-bottom: 69px;
-    color: #F9FAF8
+  background-color: #1f2937;
+
+  padding-top: 12px;
+  padding-bottom: 100px;
+  color: #f9faf8;
 }
 
 .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .header-logo {
-    display: flex;
-    font-size: 24px;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  font-size: 24px;
+  font-weight: 600;
+  justify-content: center;
 }
 .header-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    gap: 32px;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  gap: 32px;
+}
+
+.hero,
+.hero-left,
+.hero-right {
+  flex: 1;
 }
 
 .hero {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.hero-left {
     display: flex;
-    flex: 1;
-    gap: 20px;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero-left-heading,
+.hero-left-text {
+    display: flex;
 }
 
 .hero-left-heading {
-    font-size: 48px;
-    font-weight: extra-bold;
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.hero-left-button {
+    max-width: 120px;
+}
+
+.low-contrast {
+    color: #e5e7eb
+}
+
+.hero-right {
+  background: url("https://picsum.photos/600/200");
+  width: 600px;
+  background-size: cover;
 }
 
 a {
-    text-decoration: none;
-    color: #F9FAF8
+  text-decoration: none;
+  color: #f9faf8;
 }
 
-.hero {
-    display: flex;
-    flex-direction: row;
+button {
+  background-color: #3882F6;
+  color: #f9faf8;
+  font-weight: bold;
+  border-radius: 6px;
+  border-width: 0;
+  padding: 10px;
+  font-size: 100%;
 }
